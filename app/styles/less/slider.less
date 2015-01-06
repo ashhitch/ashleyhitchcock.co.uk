@@ -1,0 +1,82 @@
+
+
+.portfolio {
+
+  .slide  + .slide  {
+    padding-top: 10px;
+
+  }
+
+
+  @media screen and (min-width: @screen-sm-min) {
+    position: absolute;
+    width: 730px;
+    height: 490px;
+    left: 50%;
+    top:50%;
+    margin-left: -365px;
+    margin-top: -245px;
+
+
+    .slide  + .slide {
+      padding-top: 0;
+    }
+
+    .portfolio-item.laptop {
+      //padding: 25px 113px;
+    }
+
+    .next-item, .prev-item {
+      position: absolute;
+      left: 0px;
+      top:110%;
+      margin-top: 0px;
+      z-index: 200;
+    }
+
+    .next-item {
+      left:120px;
+      //right:-40px;
+    }
+  }
+
+  @media screen and (min-width: @screen-md-min) {
+    width: 913px;
+    height: 594px;
+    margin-left: -455px;
+    margin-top: -295px;
+
+
+    .portfolio-item.laptop {
+      //padding: 32px 142px;
+    }
+
+    .next-item, .prev-item {
+      left: -10px;
+      top: 80px;
+      z-index: 200;
+    }
+
+    .next-item {
+      left:auto;
+      right:-10px;
+    }
+  }
+
+
+  @media screen and (min-width: @screen-lg-min) {
+
+    .next-item, .prev-item {
+      position: absolute;
+      left: -70px;
+      top:50%;
+      margin-top: -47px;
+    }
+
+    .next-item {
+      left:auto;
+      right:-70px;
+    }
+  }
+
+}

@@ -1,0 +1,114 @@
+<div class="wrapper">
+  <div class="page main" one-page-scroll section-container="section" responsive-fallback="768" loop=true>
+
+    <section class="section section--1 v-centered">
+      <div class="page__container v-centered__content">
+        <div class="logo-wrap">
+          <span class="webicon logo visible-xs-inline-block"></span>
+          <span class="webicon logo-full hidden-xs"></span>
+          <div class="intro visible-xs-inline-block">
+            <h1 class="name">Ashley Hitchcock</h1>
+            <h2 class="h3 job">Senior Web Designer</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--2">
+      <div class="page__container">
+        <div class="portfolio">
+          <div class="cycle-me" cycle>
+            <div class="slide" ng-repeat="item in portfolio | limitTo:10">
+              <div class="portfolio-item">
+                <a href="{{item.url}}" target="_blank"><img ng-src="{{item.imageUrl}}" alt="{{item.name}}" class="img-responsive"></a>
+              </div>
+            </div>
+          </div>
+          <a href="#" id="prev" class="prev-item hidden-xs"><span class="webicon prev"></span></a>
+          <a href="#" id="next" class="next-item hidden-xs"><span class="webicon next"></span></a>
+        </div>
+      </div>
+    </section>
+    <section class="section section--3 v-centered">
+      <div class="page__container v-centered__content">
+
+        <div class="tech__wrapper">
+          <h2 class="ani-text">Technologies I love...</h2>
+          <div class="tech">
+            <ul class="tech--list list-inline">
+              <li>
+                <div class="tech-item tech-item--1">
+                  <span class="webicon responsive"></span>
+                  <span class="tech-item__title">Responsive</span>
+                </div>
+              </li>
+              <li>
+                <div class="tech-item tech-item--2">
+                  <span class="webicon angular"></span>
+                  <span class="tech-item__title">AngularJS</span>
+                </div>
+              </li>
+              <li>
+                <div class="tech-item tech-item--3">
+                  <span class="webicon jquery"></span>
+                  <span class="tech-item__title">jQuery</span>
+                </div>
+              </li>
+              <li>
+                <div class="tech-item tech-item--3">
+                  <span class="webicon php"></span>
+                  <span class="tech-item__title">PHP</span>
+                </div>
+              </li>
+              <li>
+                <div class="tech-item tech-item--4">
+                  <span class="webicon wordpress"></span>
+                  <span class="tech-item__title">WordPress</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section--4">
+      <div class="page__container">
+
+        <div class="grid">
+          <div class="grid__item instagram" ng-repeat="item in instagramData.items">
+            <div class="photo"  style="background-image:url('{{ item.images.standard_resolution.url }}')"><img ng-src="{{ item.images.low_resolution.url }}" alt="{{item.caption.text}}" class="visible-xs" pagespeed_no_transform></div>
+            <div class="info" url="{{ item.images.low_resolution.url }}">
+              <p>{{item.caption.text}}</p>
+              <p class="link"><a href="{{item.link}}" target="_blank">View on Instagram</a></p>
+            </div>
+          </div>
+          <div ng-show="instagramData.error" class="alert alert-danger">
+            <strong>Warning!</strong><br/>{{instagramData.error}}.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section--5 v-centered">
+      <div class="page__container v-centered__content">
+
+        <div class="contact-wrap">
+          <p class="email h2" email>Say Hello</p>
+          <ul class="list-inline social-icons">
+            <li><a href="http://ashleyhitchcock.co.uk/www.behance.net/Ashley-Hitchcock" target="_blank"><span class="webicon be"></span></a></li>
+            <li><a href="https://github.com/ashhitch" target="_blank"><span class="webicon github"></span></a></li>
+            <li><a href="https://plus.google.com/103437962596040463321/posts" target="_blank"><span class="webicon googleplus"></span></a></li>
+            <li><a href="http://www.instagram.com/ash_hitch" target="_blank"><span class="webicon instagram"></span></a></li>
+            <li><a href="http://uk.linkedin.com/in/ashhitchcock"><span class="webicon linkedin"></span></a></li>
+            <!-- <li><a href="#"><span class="webicon pinterest"></span></a></li> -->
+            <li><a href="http://www.twitter.com/ash_hitchcock" target="_blank"><span class="webicon twitter"></span></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</div>

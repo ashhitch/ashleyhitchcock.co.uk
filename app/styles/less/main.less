@@ -1,0 +1,47 @@
+@import url('vars.less');
+@import url('scaff.less');
+@import url('mixins.less');
+@import url('utilities.less');
+@import url('responsive-utilities.less');
+@import url('type.less');
+@import url('icons.less');
+@import url('onepage.less');
+@import url('page.less');
+@import url('slider.less');
+@import url('grid.less');
+
+
+// Title text
+// --------------------------------------------------
+.ani-item {
+  box-shadow: -12px 5px 0px rgba(0, 157, 220, 0.44), 18px -4px 0px rgba(238, 47, 128, 0.24);
+  transform: rotate(-1deg);
+  animation: aniShaddowItem 5s;
+  animation: aniShaddowItem linear 2s infinite alternate;
+ }
+
+/* Keyframe animation */
+@keyframes aniShaddowItem {
+  0%   { box-shadow: -4px 5px 0px rgba(0, 157, 220, 0.45), 2px 0px 0px rgba(238, 47, 128, 0.25); }
+  25%  { box-shadow: 0px 2px 0px rgba(0, 157, 220, 0.45), -5px -6px 0px rgba(238, 47, 128, 0.25); }
+  50%  { box-shadow: 6px -5px 0px rgba(0, 157, 220, 0.45), 8px 6px 0px rgba(238, 47, 128, 0.25); }
+  100% { box-shadow: -4px 5px 0px rgba(0, 157, 220, 0.45), 2px 0px 0px rgba(238, 47, 128, 0.25); }
+}
+
+
+
+@media screen and (min-width: @screen-sm-min) {
+}
+
+@media screen and (min-width: @screen-md-min) {
+}
+
+@media screen and (min-width: @screen-lg-min) {
+}
+
+
+
+
+
+
+

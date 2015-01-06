@@ -1,0 +1,241 @@
+.page__container {
+  padding: 60px 20px;
+
+  @media (min-width: @screen-sm-min) {
+    padding: 60px 40px;
+  }
+
+
+  @media (min-width: @screen-lg-min) {
+    padding: 100px 50px;
+  }
+}
+
+.arrow--bottom:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 28px solid #FFF;
+  border-left: 27px solid transparent;
+  border-right: 28px solid transparent;
+  bottom: -28px;
+  left: 50%;
+  margin-left: -28px;
+  position: absolute;
+  z-index: 15;
+}
+
+.section--1 {
+  background-color: @brand-navy-blue;
+  color: #fff;
+
+  &.arrow--bottom:after { border-top-color: @brand-navy-blue; }
+}
+
+.section--2 {
+  background-color: @brand-red;
+  color: #fff;
+
+  &.arrow--bottom:after { border-top-color: @brand-red; }
+}
+
+.section--3 {
+  background-color: @brand-sky-blue;
+  color: #fff;
+
+  &.arrow--bottom:after { border-top-color: @brand-sky-blue; }
+}
+
+.section--4 {
+  background-color: #fff;
+  &.arrow--bottom:after { border-top-color: @brand-sky-blue; }
+
+  .page__container {
+    padding: 0!important;
+    height: 100%;
+  }
+
+}
+
+.section--5 {
+  background-color: @brand-blue;
+  color: #fff;
+
+  &.arrow--bottom:after { border-top-color: #fff; }
+}
+
+
+.v-centered {
+  text-align: center;
+}
+
+/* The ghost, nudged to maintain perfect centering */
+.v-centered:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+/* The element to be centered, can
+   also be of any width and height */
+.v-centered__content {
+  display: inline-block;
+  vertical-align: middle;
+ // width: 280px;
+
+  @media screen and (min-width: @screen-lg-min) {
+   // width: 980px;
+  }
+}
+
+.tech__wrapper {
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.tech {
+  padding-top: 40px;
+  .row > div {
+    margin-top: 30px;
+  }
+  @media (min-width: @screen-sm-min) {
+
+    padding-top: 10px;
+  }
+
+  @media screen and (min-width: @screen-lg-min) {
+
+    padding-top: 30px;
+    .row > div {
+      margin-top: 0;
+    }
+  }
+}
+
+
+.tech-item {
+  margin: 0 auto;
+  text-align: center;
+
+  .webicon {
+    clear: both;
+    margin: 0 auto;
+
+  }
+  .tech-item__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    clear: both;
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+
+    @media (min-width: @screen-sm-min) {
+      padding-top: 10px;
+    }
+
+    @media (min-width: @screen-lg-min) {
+      padding-top: 20px;
+    }
+  }
+
+  @media screen and (min-width: @screen-md-min) {
+    & + .tech-item {
+      margin-top: 0;
+    }
+  }
+
+}
+
+
+
+.tech--list {
+  li {
+    padding: 20px 30px;
+
+    @media (min-width: @screen-sm-min) {
+      padding: 20px 40px 0 40px;
+    }
+
+    @media (min-width: @screen-lg-min) {
+      padding: 20px 18px;
+    }
+
+    @media (min-width: @screen-xlg-min) {
+      padding: 20px 30px;
+    }
+
+
+
+
+  }
+}
+
+
+.email,.email a {
+  text-align: center;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.email a:hover {
+  text-decoration: none;
+  border-bottom: 4px solid #fff;
+}
+
+
+.social-icons {
+  margin: 0 auto;
+  padding-top: 100px;
+  width: auto;
+  max-width: 290px;
+
+
+  li {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  li a:hover {
+    opacity: 0.8;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    max-width: 585px;
+  }
+
+  @media (min-width: @screen-xlg-min) {
+    max-width: 645px;
+  }
+
+  @media screen and (min-width: @screen-md-min) {
+    li {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+
+  @media screen and (min-width: @screen-xlg-min) {
+    li {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+}
+
+.contact-wrap {
+  @media screen and (min-width: @screen-lg-min) {
+    width: 1140px;
+    height: 230px;
+    min-height: 230px;
+  }
+}
