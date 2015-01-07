@@ -2,7 +2,6 @@
   "name": "ahportfolio",
   "version": "0.0.0",
   "dependencies": {
-
     "normalize.css": "~3.0.2"
   },
   "devDependencies": {
@@ -17,7 +16,6 @@
     "grunt-contrib-cssmin": "^0.9.0",
     "grunt-contrib-htmlmin": "^0.3.0",
     "grunt-contrib-imagemin": "^0.8.1",
-    "imagemin-gifsicle": "^4.0.0",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-less": "~0.12.0",
     "grunt-contrib-uglify": "^0.4.0",
@@ -29,6 +27,10 @@
     "grunt-svgmin": "^0.4.0",
     "grunt-usemin": "^2.1.1",
     "grunt-wiredep": "^1.7.0",
+    "imagemin-gifsicle": "^4.0.0",
+    "imagemin-jpegtran": "^4.0.0",
+    "imagemin-optipng": "^4.0.0",
+    "imagemin-pngquant": "^4.0.0",
     "jpegtran-bin": "0.2.3",
     "jshint-stylish": "^0.2.0",
     "karma": "^0.12.31",
