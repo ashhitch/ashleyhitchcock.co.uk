@@ -11,5 +11,6 @@ Four quick start options are available:
 - Clone the repo
 - Install with [Bower](http://bower.io): `bower install`.
 - Install with [npm](https://www.npmjs.org): `npm install`.
-- Build with [Grunt](http://gruntjs.com/): `grunt serve`
+- Dev with [Grunt](http://gruntjs.com/): `grunt serve`
+- Build with [Grunt](http://gruntjs.com/): `grunt build`
 - **Important:** You will also need to rename app/scripts/services/**siteconfig-sample.js** to **siteconfig.js** and enter your Instagram details.
