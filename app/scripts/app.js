@@ -11,9 +11,6 @@
 angular
   .module('ahPortfolioApp', [
     'ngAnimate',
-    'ngAria',
-    'ngCookies',
-    'ngMessages',
     'ngResource',
     'ngRoute',
     'ngSanitize',
