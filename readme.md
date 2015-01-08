@@ -2,7 +2,7 @@
 
 The AngularJS Code powering my personal [portfolio site](http://www.ashleyhitchcock.co.uk)
 
-#Please note this project is WIP.
+#Please note this project is Work In Progress.
 
 ## Quick start
 
