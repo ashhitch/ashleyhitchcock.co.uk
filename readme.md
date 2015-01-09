@@ -1,5 +1,7 @@
 #AshleyHitchcock.co.uk Portfolio Code
 
+[![Build Status](https://travis-ci.org/ashhitch/ashleyhitchcock.co.uk.svg?branch=testing)](https://travis-ci.org/ashhitch/ashleyhitchcock.co.uk)
+
 The AngularJS Code powering my personal [portfolio site](http://www.ashleyhitchcock.co.uk)
 
 #Please note this project is Work In Progress.
