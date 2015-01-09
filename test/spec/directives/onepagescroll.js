@@ -12,9 +12,9 @@ describe('Directive: onePageScroll', function () {
     scope = $rootScope.$new();
   }));
 
-  it('should make hidden element visible', inject(function ($compile) {
-    element = angular.element('<one-page-scroll></one-page-scroll>');
-    element = $compile(element)(scope);
-    expect(element.text()).toBe('this is the onePageScroll directive');
-  }));
+  // it('should make hidden element visible', inject(function ($compile) {
+  //   element = angular.element('<one-page-scroll></one-page-scroll>');
+  //   element = $compile(element)(scope);
+  //   expect(element.text()).toBe('this is the onePageScroll directive');
+  // }));
 });
