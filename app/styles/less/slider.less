@@ -1,14 +1,22 @@
 
 
 .portfolio {
+  padding-top: 50px;
 
-  .slide  + .slide  {
-    padding-top: 10px;
+  .next-item, .prev-item {
+      position: absolute;
+      top: 20px;
+      right: 130px;
+      z-index: 200;
 
-  }
+    }
 
+    .next-item {
+      right: 20px;
+    }
 
   @media screen and (min-width: @screen-sm-min) {
+    padding-top:0px;
     position: absolute;
     width: 730px;
     height: 490px;
@@ -22,21 +30,18 @@
       padding-top: 0;
     }
 
-    .portfolio-item.laptop {
-      //padding: 25px 113px;
-    }
 
     .next-item, .prev-item {
-      position: absolute;
       left: 0px;
-      top:110%;
+      right: auto;
+      top: 110%;
       margin-top: 0px;
       z-index: 200;
     }
 
     .next-item {
-      left:120px;
-      //right:-40px;
+      left: 130px;
+      right: auto;
     }
   }
 
@@ -46,10 +51,6 @@
     margin-left: -455px;
     margin-top: -295px;
 
-
-    .portfolio-item.laptop {
-      //padding: 32px 142px;
-    }
 
     .next-item, .prev-item {
       left: -10px;
@@ -68,14 +69,14 @@
 
     .next-item, .prev-item {
       position: absolute;
-      left: -70px;
+      left: -120px;
       top:50%;
       margin-top: -47px;
     }
 
     .next-item {
       left:auto;
-      right:-70px;
+      right:-120px;
     }
   }
 
