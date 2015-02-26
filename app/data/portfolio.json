@@ -8,6 +8,11 @@
     },
     {
         "id": "",
+        "imageUrl": "images/portfolio/portfolio-confused.jpg",
+        "name": "Confused.com",
+        "url": "http://www.confused.com/home-insurance/my-neighbourhood"
+    },{
+        "id": "",
         "imageUrl": "images/portfolio/portfolio-kineo.jpg",
         "name": "Kineo E-Learning",
         "url": "http://www.kineo.com/"
